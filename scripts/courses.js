@@ -2,7 +2,7 @@ const courses = [
   { 
     code: "WDD 130", 
     name: "Web Fundamentals", 
-    credits: 3, 
+    credits: 2, 
     completed: true, 
     type: "wdd",
     description: "Introduction to web development fundamentals including HTML, CSS, and basic web design principles."
@@ -10,8 +10,8 @@ const courses = [
   { 
     code: "WDD 131", 
     name: "Dynamic Web Fundamentals", 
-    credits: 3, 
-    completed: false, 
+    credits: 2, 
+    completed: true, 
     type: "wdd",
     description: "Building dynamic web applications with JavaScript and modern web development techniques."
   },
@@ -27,7 +27,7 @@ const courses = [
     code: "CSE 111", 
     name: "Programming with Functions", 
     credits: 2, 
-    completed: false, 
+    completed: true, 
     type: "cse",
     description: "Advanced programming concepts focusing on functions, modules, and functional programming paradigms."
   },
@@ -35,15 +35,15 @@ const courses = [
     code: "WDD 231", 
     name: "Frontend Web Development I", 
     credits: 3, 
-    completed: true, 
+    completed: false, 
     type: "wdd",
     description: "Advanced frontend development with modern frameworks and responsive design techniques."
   },
   { 
     code: "CSE 210", 
     name: "Programming with Classes", 
-    credits: 3, 
-    completed: false, 
+    credits: 2, 
+    completed: true, 
     type: "cse",
     description: "Object-oriented programming concepts including classes, inheritance, and polymorphism."
   }
