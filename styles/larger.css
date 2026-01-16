@@ -1,0 +1,157 @@
+/* -----------------------------
+   Desktop Styles (768px and up)
+-------------------------------- */
+
+@media screen and (min-width: 768px) {
+  /* Header & Navigation */
+  #menu {
+    display: none;
+  }
+  
+  nav {
+    display: flex;
+    position: static;
+    width: auto;
+    background: none;
+    box-shadow: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+  }
+  
+  nav a {
+    border-top: none;
+    border-radius: var(--radius);
+    margin-left: 0.5rem;
+    padding: 0.75rem 1.5rem;
+  }
+  
+  nav a:first-child {
+    margin-left: 0;
+  }
+  
+  /* Main Layout */
+  main {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+      "site-intro site-intro"
+      "about about"
+      "courses courses";
+    gap: 2rem;
+  }
+  
+  .site-intro {
+    grid-area: site-intro;
+  }
+  
+  .about-section {
+    grid-area: about;
+  }
+  
+  .courses-section {
+    grid-area: courses;
+  }
+  
+  /* About Me Section */
+  .about-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .about-text {
+    flex: 2;
+  }
+  
+  .student-photo {
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  /* Courses Grid */
+  .courses-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+/* -----------------------------
+   Large Desktop Styles (1024px and up)
+-------------------------------- */
+
+@media screen and (min-width: 1024px) {
+  /* Header */
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Main Layout */
+  main {
+    grid-template-columns: 1fr 300px;
+    grid-template-areas: 
+      "site-intro about"
+      "courses courses";
+  }
+  
+  .site-intro {
+    margin-right: 1rem;
+  }
+  
+  .about-section {
+    margin-left: 1rem;
+  }
+  
+  .about-content {
+    flex-direction: column;
+  }
+  
+  .about-text {
+    margin-bottom: 1.5rem;
+  }
+  
+  .student-photo {
+    width: 100%;
+  }
+  
+  .student-photo img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Courses Grid */
+  .courses-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* Footer */
+  footer {
+    padding: 2.5rem 2rem;
+  }
+  
+  .social-links {
+    gap: 2rem;
+  }
+  
+  .social-links a {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* -----------------------------
+   Extra Large Screens (1200px and up)
+-------------------------------- */
+
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+  }
+  
+  .courses-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,374 @@
+/* -----------------------------
+   Global Styles (Mobile First)
+-------------------------------- */
+
+:root {
+  --primary: #1f2933;
+  --secondary: #f5f5f5;
+  --accent: #2563eb;
+  --accent-light: #3b82f6;
+  --completed: #10b981;
+  --pending: #6b7280;
+  --text: #111827;
+  --light-text: #6b7280;
+  --border: #d1d5db;
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --radius: 8px;
+  --font-main: 'Poppins', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-secondary);
+  color: var(--text);
+  background-color: #ffffff;
+  line-height: 1.6;
+  min-width: 320px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* -----------------------------
+   Header & Navigation
+-------------------------------- */
+
+header {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-name {
+  font-family: var(--font-main);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  margin-left: 0.75rem;
+}
+
+/* Hamburger Button */
+#menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+#menu::before {
+  content: "☰";
+  font-size: 1.75rem;
+  color: white;
+  font-weight: bold;
+}
+
+#menu.open::before {
+  content: "✖";
+}
+
+/* Navigation (hidden by default on mobile) */
+nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary);
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav.open {
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+  font-family: var(--font-main);
+  font-weight: 500;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: var(--accent);
+}
+
+/* -----------------------------
+   Main Layout
+-------------------------------- */
+
+main {
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 2rem;
+  background-color: var(--secondary);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+}
+
+h2 {
+  font-family: var(--font-main);
+  font-weight: 600;
+  color: var(--primary);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.5rem;
+}
+
+/* Site Intro Section */
+.site-intro p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text);
+  margin: 0;
+}
+
+/* About Me Section */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text);
+  margin: 0;
+}
+
+.student-photo {
+  text-align: center;
+}
+
+.student-photo img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: var(--radius);
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+/* Courses Section */
+.filter-controls {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--accent);
+  background-color: transparent;
+  color: var(--accent);
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-family: var(--font-main);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: rgba(37, 99, 235, 0.1);
+}
+
+.filter-btn.active {
+  background-color: var(--accent);
+  color: white;
+}
+
+.courses-grid {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.course-card {
+  background-color: white;
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  border-left: 4px solid var(--pending);
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.course-card.completed {
+  border-left-color: var(--completed);
+}
+
+.course-card h3 {
+  font-family: var(--font-main);
+  font-weight: 600;
+  color: var(--primary);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.course-card p {
+  color: var(--light-text);
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.course-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.course-credits {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.course-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.course-status.completed {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--completed);
+}
+
+.course-status.pending {
+  background-color: rgba(107, 114, 128, 0.1);
+  color: var(--pending);
+}
+
+.credits-summary {
+  text-align: center;
+  padding: 1rem;
+  background-color: white;
+  border-radius: var(--radius);
+  margin-top: 1rem;
+  border: 1px solid var(--border);
+}
+
+.credits-summary p {
+  font-family: var(--font-main);
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--primary);
+  margin: 0;
+}
+
+#totalCredits {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 1.3rem;
+}
+
+/* -----------------------------
+   Footer
+-------------------------------- */
+
+footer {
+  background-color: var(--primary);
+  color: white;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.social-links img {
+  filter: brightness(0) invert(1);
+  width: 24px;
+  height: 24px;
+}
+
+.footer-info {
+  margin-bottom: 1rem;
+}
+
+.footer-info p {
+  font-family: var(--font-main);
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.last-modified {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+#lastModified {
+  margin: 0;
+  font-family: var(--font-secondary);
+}
