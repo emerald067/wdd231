@@ -114,16 +114,10 @@ nav.open {
 nav a {
   padding: 1rem;
   text-decoration: none;
-  color: white;
   font-family: var(--font-main);
   font-weight: 500;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   transition: background-color 0.3s ease;
-}
-
-nav a:hover,
-nav a.active {
-  background-color: var(--accent);
 }
 
 /* -----------------------------
