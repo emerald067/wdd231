@@ -34,7 +34,7 @@ const courses = [
   { 
     code: "WDD 231", 
     name: "Frontend Web Development I", 
-    credits: 3, 
+    credits: 2, 
     completed: false, 
     type: "wdd",
     description: "Advanced frontend development with modern frameworks and responsive design techniques."
