@@ -148,6 +148,13 @@ h2 {
   padding-bottom: 0.5rem;
 }
 
+section h2 {
+    background-color: var(--primary);
+    color: white !important; 
+    padding: 0.5rem;
+    border-radius: var(--radius);
+}
+
 /* Site Intro Section */
 .site-intro p {
   font-size: 1rem;
