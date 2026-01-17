@@ -8,22 +8,33 @@
     display: none;
   }
   
-  nav {
+  header {
     display: flex;
-    position: static;
-    width: auto;
-    background: none;
-    box-shadow: none;
+    align-items: center;
+    padding: 0.75rem 1rem;
+  }
+  
+  .header-content {
     flex-direction: row;
-    justify-content: flex-end;
-    margin-top: 0.5rem;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+    .site-name {
+        font-size: 1.75rem;
+        margin-left: 0;
+    }
+    
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    margin-left: 1rem;
+    background-color: transparent;
   }
   
   nav a {
-    border-top: none;
-    border-radius: var(--radius);
-    margin-left: 0.5rem;
-    padding: 0.75rem 1.5rem;
+    border: none;
+    padding: 0.5rem 1rem;
   }
   
   nav a:first-child {
