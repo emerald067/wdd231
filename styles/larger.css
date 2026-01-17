@@ -24,10 +24,11 @@
         font-size: 1.75rem;
         margin-left: 0;
     }
-    
+
   nav {
     display: flex !important;
     flex-direction: row;
+    gap: 1rem;
     margin-left: 1rem;
     background-color: transparent;
   }
@@ -53,6 +54,11 @@
     gap: 2rem;
   }
   
+main h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
   .site-intro {
     grid-area: site-intro;
   }
