@@ -1,0 +1,87 @@
+/* Global Styles (Mobile First) */
+:root {
+  --primary-color: #005f73;
+  --secondary-color: #0a9396;
+  --accent-color: #ee9b00;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", "Roboto", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Header & Footer */
+header,
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 1.25rem;
+}
+
+header h1 {
+  font-size: 1.6rem;
+}
+
+footer {
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Main Content (Mobile) */
+main {
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+/* Prophet Cards (Mobile) */
+#cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+#cards section {
+  background-color: white;
+  border-radius: 8px;
+  padding: 0.75rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+#cards h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+}
+
+#cards img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+#cards p {
+  font-size: 0.95rem;
+  color: var(--text-color);
+  margin-top: 0.5rem;
+}
+
+#cards section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}

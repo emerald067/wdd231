@@ -1,0 +1,24 @@
+/* Large Screens (40rem+) */
+@media (min-width: 40rem) {
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  main {
+    max-width: 1200px;
+  }
+
+  #cards {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  #cards section {
+    padding: 1.25rem;
+  }
+
+  #cards h2 {
+    font-size: 1.3rem;
+  }
+}
