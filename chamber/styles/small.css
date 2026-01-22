@@ -166,7 +166,7 @@ header {
     border-radius: 4px;
 }
 
-.list-info h3 {
+.list-info h2 {
     margin: 0 0 0.5rem 0;
     font-size: 1.1rem;
 }
@@ -252,7 +252,7 @@ footer {
     gap: 2rem;
 }
 
-.contact-info h3 {
+.contact-info h2 {
     margin-top: 0;
     color: #3498db;
 }
