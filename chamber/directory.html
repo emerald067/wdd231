@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Directory of member businesses for the Anytown Chamber of Commerce. Discover local services and network with community leaders.">
+    <meta name="author" content="Emerald Uwaoma Awoke">
+    
+    <!-- Facebook Open Graph Meta Tags (REQUIRED) -->
+    <meta property="og:title" content="Anytown Chamber of Commerce | Business Directory">
+    <meta property="og:description" content="Connect with local businesses. Browse our directory of chamber members from Anytown.">
+    <meta property="og:image" content="https://emerald067.github.io/wdd231/chamber/images/og-preview.webp">
+    <meta property="og:url" content="https://emerald067.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    
+    <title>Forward Momentum Business Alliance | Directory</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.webp" alt="Forward Momentum Business Alliance Logo" width="50" height="50">
+                <span class="site-title">Forward Momentum Business Alliance</span>
+            </a>
+            <button id="menu-button" aria-label="Toggle Navigation Menu">☰</button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="directory-main">
+        <h1>Member Directory</h1>
+        <p class="page-description">Browse our valued chamber members. Support local businesses that build our community.</p>
+        
+        <!-- View Toggle Controls -->
+        <div class="view-toggle">
+            <button id="grid-view-btn" class="active" aria-label="Display as Grid">
+                <span>Grid</span>
+            </button>
+            <button id="list-view-btn" aria-label="Display as List">
+                <span>List</span>
+            </button>
+        </div>
+        
+        <!-- Dynamic Member Display Area -->
+        <div id="member-cards-container" class="cards-grid">
+            <!-- JavaScript will populate member cards here -->
+            <p>Loading member data...</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Forward Momentum Business Alliance</h3>
+                <p>100 Civic Center Drive, Suite 200, Prosperity Heights, ST 12345</p>
+                <p>📧 info@forwardmomentumalliance.org | 📞 (234) 916-135-1016</p>
+            </div>
+            <div class="development-info">
+                <p>© <span id="current-year">2024</span> Forward Momentum Business Alliance</p>
+                <p><strong>Emerald Uwaoma Awoke</strong> | WDD 231 Project</p>
+                <p>Last Modified: <span id="last-modified">Loading...</span></p>
+                <p>Weather data provided by OpenWeatherMap</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/* ===== MEDIA QUERY: 768px and larger ===== */
+@media screen and (min-width: 768px) {
+    
+    /* Navigation - Show always */
+    #menu-button {
+        display: none !important;
+    }
+    
+    #primary-nav {
+        display: block !important;
+        position: static;
+        width: auto;
+        background: transparent;
+        box-shadow: none;
+    }
+    
+    #primary-nav ul {
+        display: flex;
+        gap: 1.5rem;
+    }
+    
+    #primary-nav li {
+        border-top: none;
+    }
+    
+    #primary-nav a {
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+    }
+    
+    /* Grid View Adjustment */
+    .cards-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    
+    /* Footer Layout */
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+    
+    .development-info {
+        border-top: none;
+        border-left: 1px solid #4a6278;
+        padding-left: 2rem;
+        padding-top: 0;
+    }
+}
+
+/* ===== MEDIA QUERY: 1024px and larger ===== */
+@media screen and (min-width: 1024px) {
+    .directory-main {
+        padding: 0 2rem;
+    }
+    
+    .cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
