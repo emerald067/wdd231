@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page for the Forward Momentum Business Alliance. Discover events, weather, and featured businesses in our community.">
+    <meta name="author" content="Emerald Uwaoma Awoke">
+    
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Forward Momentum Business Alliance | Home">
+    <meta property="og:description" content="Welcome to our business community. Discover local events, weather, and featured businesses.">
+    <meta property="og:image" content="https://emerald067.github.io/wdd231/chamber/images/og-preview.webp">
+    <meta property="og:url" content="https://emerald067.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <title>Forward Momentum Business Alliance | Home</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.webp" alt="Forward Momentum Business Alliance Logo" width="50" height="50">
+                <span class="site-title">Forward Momentum Business Alliance</span>
+            </a>
+            <button id="menu-button" aria-label="Toggle Navigation Menu">☰</button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="home-main">
+        <!-- 1. HERO SECTION -->
+        <section class="hero">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="Business professionals networking in a modern office" width="1600" height="600">
+            </picture>
+            <div class="hero-content">
+                <h1>Building Stronger Businesses Together</h1>
+                <p>Connect, grow, and thrive with the Forward Momentum Business Alliance.</p>
+                <a href="join.html" class="cta-button">Join Our Community</a>
+            </div>
+        </section>
+
+        <!-- 2. CURRENT EVENTS -->
+        <section class="events card">
+            <h2>Upcoming Events</h2>
+            <div class="events-grid">
+                <div class="event-card">
+                    <h3>Business Networking Breakfast</h3>
+                    <p class="event-date">📅 Wednesday, May 15 | 8:00 AM</p>
+                    <p>Start your day with connections at City Center Hotel. Free for members.</p>
+                </div>
+                <div class="event-card">
+                    <h3>Digital Marketing Workshop</h3>
+                    <p class="event-date">📅 Friday, May 24 | 2:00 PM</p>
+                    <p>Learn social media strategies to grow your business online.</p>
+                </div>
+                <div class="event-card">
+                    <h3>Annual Business Awards Gala</h3>
+                    <p class="event-date">📅 Saturday, June 8 | 6:30 PM</p>
+                    <p>Celebrate outstanding achievements in our business community.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. WEATHER SECTION -->
+        <section class="weather card">
+            <h2>Prosperity Heights Weather</h2>
+            <div class="weather-content">
+                <div class="current-weather">
+                    <div class="weather-header">
+                        <h3>Today</h3>
+                        <div id="weather-icon"></div>
+                    </div>
+                    <div class="weather-details">
+                        <p><strong>Temperature:</strong> <span id="current-temp">--</span>°C</p>
+                        <p><strong>Condition:</strong> <span id="current-desc">--</span></p>
+                        <p><strong>Humidity:</strong> <span id="current-humidity">--</span>%</p>
+                        <p><strong>Wind Speed:</strong> <span id="current-wind">--</span> km/h</p>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <h3>3-Day Forecast</h3>
+                    <div id="forecast-container" class="forecast-grid">
+                        <!-- Forecast cards will be inserted by JavaScript -->
+                        <div class="forecast-day">
+                            <p>Loading forecast...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="weather-source">Weather data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></p>
+        </section>
+
+        <!-- 4. COMPANY SPOTLIGHTS -->
+        <section class="spotlights">
+            <h2>Featured Members</h2>
+            <div id="spotlight-container" class="spotlight-grid">
+                <!-- Dynamic member cards will be inserted here -->
+                <div class="placeholder-card">
+                    <p>Loading featured members...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. SECONDARY CALL TO ACTION -->
+        <section class="cta-bottom card">
+            <div class="cta-content">
+                <h2>Ready to Accelerate Your Business?</h2>
+                <p>Join over 250 local businesses already benefiting from our exclusive resources, networking opportunities, and advocacy.</p>
+                <a href="join.html" class="cta-button secondary">Become a Member Today</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h2>Forward Momentum Business Alliance</h2>
+                <p>100 Civic Center Drive, Suite 200, Prosperity Heights, ST 12345</p>
+                <p>📧 info@forwardmomentumalliance.org | 📞 (234) 916-135-1016</p>
+            </div>
+            <div class="development-info">
+                <p>© <span id="current-year">2024</span> Forward Momentum Business Alliance</p>
+                <p><strong>Emerald Uwaoma Awoke</strong> | WDD 231 Project</p>
+                <p>Last Modified: <span id="last-modified">Loading...</span></p>
+                <p>Weather data provided by OpenWeatherMap</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

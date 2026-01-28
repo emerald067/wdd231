@@ -57,3 +57,102 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+@media screen and (min-width: 768px) {
+    /* Grid Layout for Home Page */
+    .home-main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "hero hero"
+            "events weather"
+            "spotlights spotlights"
+            "cta cta";
+        gap: 2rem;
+        padding: 0 2rem;
+    }
+
+    .hero { grid-area: hero; }
+    .events { grid-area: events; }
+    .weather { grid-area: weather; }
+    .spotlights { grid-area: spotlights; }
+    .cta-bottom { grid-area: cta; }
+
+    /* Hero Section - Larger Screens */
+    .hero img {
+        height: 400px;
+    }
+
+    .hero-content {
+        padding: 2rem;
+        background: linear-gradient(to right, rgba(26, 79, 139, 0.9) 0%, rgba(26, 79, 139, 0.7) 100%);
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    /* Events Grid - 2 columns */
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Weather Content - Stack vertically */
+    .weather-content {
+        grid-template-columns: 1fr;
+    }
+
+    .forecast-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    /* Spotlights Grid - 3 columns */
+    .spotlight-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* CTA Bottom - More padding */
+    .cta-bottom {
+        padding: 3rem;
+    }
+
+    .cta-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* Hero Section - Even larger */
+    .hero img {
+        height: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Events Grid - 3 columns */
+    .events-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Spotlights Grid - 4 columns when space allows */
+    .spotlight-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Weather Layout - Optimize spacing */
+    .weather-content {
+        grid-template-rows: auto 1fr;
+    }
+}
+
+/* Additional responsive adjustments for very large screens */
+@media screen and (min-width: 1200px) {
+    .home-main {
+        padding: 0;
+    }
+}
+
