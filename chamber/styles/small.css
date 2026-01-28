@@ -231,11 +231,10 @@ h1 {
 
 .membership-badge {
     display: inline-block;
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    margin-top: 0.5rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 650;
 }
 
 .gold-badge { background-color: #FFF9D6; color: #B8860B; }
@@ -332,7 +331,7 @@ a:hover {
 /* CTA BUTTONS */
 .cta-button {
     display: inline-block;
-    background-color: #4CAF50;
+    background-color: #121212;
     color: white;
     padding: 0.8rem 1.8rem;
     border-radius: 4px;
@@ -496,15 +495,6 @@ a:hover {
 .spotlight-info p {
     margin: 0.5rem 0;
     color: #555;
-}
-
-/* MEMBERSHIP BADGES */
-.membership-badge {
-    display: inline-block;
-    padding: 0.2rem 0.6rem;
-    border-radius: 12px;
-    font-size: 0.85rem;
-    font-weight: 650;
 }
 
 .membership-badge.gold {
