@@ -258,7 +258,7 @@ footer {
 
 .contact-info h2 {
     margin-top: 0;
-    color: #3498db;
+    color: #ecf0f1;
 }
 
 .development-info {
@@ -394,7 +394,7 @@ a:hover {
 
 .current-weather {
     padding: 1.2rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #1a4f8b;
     color: white;
     border-radius: 8px;
 }
@@ -514,29 +514,3 @@ a:hover {
     color: white;
 }
 
-.cta-content h2 {
-    color: white;
-    margin-top: 0;
-}
-
-.cta-content p {
-    margin-bottom: 1.5rem;
-    opacity: 0.9;
-}
-
-/* ERROR STATES */
-.error, .error-card {
-    color: #dc3545;
-    text-align: center;
-    padding: 1rem;
-    background: #f8d7da;
-    border-radius: 4px;
-}
-
-.placeholder-card {
-    text-align: center;
-    padding: 2rem;
-    background: #f8f9fa;
-    border-radius: 8px;
-    color: #666;
-}
