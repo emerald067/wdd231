@@ -258,7 +258,7 @@ footer {
 
 .contact-info h2 {
     margin-top: 0;
-    color: #ecf0f1;
+    color: #d9e5e8;
 }
 
 .development-info {
@@ -394,7 +394,7 @@ a:hover {
 
 .current-weather {
     padding: 1.2rem;
-    background: #1a4f8b;
+    background: #001e8a;
     color: white;
     border-radius: 8px;
 }
