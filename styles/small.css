@@ -372,3 +372,28 @@ footer {
   margin: 0;
   font-family: var(--font-secondary);
 }
+
+/* Modal Dialog Styles */
+dialog {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#closeModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
