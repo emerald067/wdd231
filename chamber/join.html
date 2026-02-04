@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Forward Momentum Business Alliance. Apply for membership and grow your business with our community.">
+    <meta name="author" content="Emerald Uwaoma Awoke">
+    
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Forward Momentum Business Alliance | Join Us">
+    <meta property="og:description" content="Apply for membership and access exclusive benefits for your business.">
+    <meta property="og:image" content="https://emerald067.github.io/wdd231/chamber/images/og-preview.webp">
+    <meta property="og:url" content="https://emerald067.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <title>Forward Momentum Business Alliance | Join</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.webp" alt="Forward Momentum Business Alliance Logo" width="50" height="50">
+                <span class="site-title">Forward Momentum Business Alliance</span>
+            </a>
+            <button id="menu-button" aria-label="Toggle Navigation Menu">☰</button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html" class="active">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="join-main">
+        <h1>Membership Application</h1>
+        <p class="page-description">Join our community of business leaders and access exclusive benefits, networking opportunities, and resources to grow your business.</p>
+        
+        <div class="join-container">
+            <!-- MEMBERSHIP APPLICATION FORM -->
+            <section class="application-form card">
+                <h2>Application Form</h2>
+                <form method="get" action="thankyou.html" id="membership-form">
+                    <!-- Personal Information -->
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        
+                        <div class="form-group">
+                            <label for="first-name">First Name *</label>
+                            <input type="text" id="first-name" name="first-name" 
+                                   required title="Please enter your first name"
+                                   autocomplete="given-name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="last-name">Last Name *</label>
+                            <input type="text" id="last-name" name="last-name" 
+                                   required title="Please enter your last name"
+                                   autocomplete="family-name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="title">Professional Title</label>
+                            <input type="text" id="title" name="title" 
+                                   title="Enter your organizational title"
+                                   autocomplete="organization-title"
+                                   pattern="[A-Za-z -]{7,}"
+                                   placeholder="e.g., Chief Executive Officer">
+                            <small class="hint">Minimum 7 letters, spaces, and hyphens only</small>
+                        </div>
+                    </fieldset>
+                    
+                    <!-- Contact Information -->
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" 
+                                   required title="Please enter a valid email address"
+                                   autocomplete="email"
+                                   placeholder="example@business.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Mobile Phone *</label>
+                            <input type="tel" id="phone" name="phone" 
+                                   required title="Please enter your mobile phone number"
+                                   placeholder="(123) 456-7890"
+                                   autocomplete="tel">
+                        </div>
+                    </fieldset>
+                    
+                    <!-- Business Information -->
+                    <fieldset>
+                        <legend>Business Information</legend>
+                        
+                        <div class="form-group">
+                            <label for="business-name">Business/Organization Name *</label>
+                            <input type="text" id="business-name" name="business-name" 
+                                   required title="Please enter your business name"
+                                   autocomplete="organization">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="membership-level">Membership Level *</label>
+                            <select id="membership-level" name="membership-level" required>
+                                <option value="">Select a membership level</option>
+                                <option value="np">NP Membership (Non-Profit) - No Fee</option>
+                                <option value="bronze">Bronze Membership</option>
+                                <option value="silver">Silver Membership</option>
+                                <option value="gold">Gold Membership</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="description">Business Description</label>
+                            <textarea id="description" name="description" 
+                                      rows="4" title="Describe your business"></textarea>
+                        </div>
+                    </fieldset>
+                    
+                    <!-- Hidden Timestamp -->
+                    <input type="hidden" id="timestamp" name="timestamp">
+                    
+                    <!-- Submit Button -->
+                    <div class="form-submit">
+                        <input type="submit" value="Submit Application" class="cta-button">
+                    </div>
+                </form>
+            </section>
+            
+            <!-- MEMBERSHIP LEVEL CARDS -->
+            <section class="membership-cards card">
+                <h2>Membership Levels</h2>
+                <p class="cards-intro">Choose the membership level that best fits your business needs. Click on any card to see detailed benefits.</p>
+                
+                <div class="cards-grid">
+                    <!-- NP Membership Card -->
+                    <div class="membership-card np-card animated-card">
+                        <h3>NP Membership</h3>
+                        <p class="membership-fee">No Fee</p>
+                        <p class="membership-desc">For non-profit organizations</p>
+                        <button class="view-benefits" data-modal="np-modal">View Benefits</button>
+                    </div>
+                    
+                    <!-- Bronze Membership Card -->
+                    <div class="membership-card bronze-card animated-card">
+                        <h3>Bronze</h3>
+                        <p class="membership-fee">$250/year</p>
+                        <p class="membership-desc">Basic business benefits</p>
+                        <button class="view-benefits" data-modal="bronze-modal">View Benefits</button>
+                    </div>
+                    
+                    <!-- Silver Membership Card -->
+                    <div class="membership-card silver-card animated-card">
+                        <h3>Silver</h3>
+                        <p class="membership-fee">$500/year</p>
+                        <p class="membership-desc">Enhanced networking</p>
+                        <button class="view-benefits" data-modal="silver-modal">View Benefits</button>
+                    </div>
+                    
+                    <!-- Gold Membership Card -->
+                    <div class="membership-card gold-card animated-card">
+                        <h3>Gold</h3>
+                        <p class="membership-fee">$1,000/year</p>
+                        <p class="membership-desc">Premium access & visibility</p>
+                        <button class="view-benefits" data-modal="gold-modal">View Benefits</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- MODALS FOR MEMBERSHIP BENEFITS -->
+        <!-- NP Membership Modal -->
+        <dialog id="np-modal" class="membership-modal">
+            <button class="close-modal" aria-label="Close modal">✕</button>
+            <h3>NP Membership Benefits</h3>
+            <p><strong>Fee:</strong> No Fee (Non-Profit Organizations only)</p>
+            <ul>
+                <li>Basic business listing in our directory</li>
+                <li>Access to member-only newsletter</li>
+                <li>Invitation to quarterly networking events</li>
+                <li>Resource library access</li>
+                <li>10% discount on chamber events</li>
+                <li>Volunteer opportunities</li>
+            </ul>
+            <p>Perfect for non-profit organizations looking to connect with the community.</p>
+        </dialog>
+        
+        <!-- Bronze Membership Modal -->
+        <dialog id="bronze-modal" class="membership-modal">
+            <button class="close-modal" aria-label="Close modal">✕</button>
+            <h3>Bronze Membership Benefits</h3>
+            <p><strong>Fee:</strong> $250 per year</p>
+            <ul>
+                <li>All NP benefits, plus:</li>
+                <li>Enhanced business directory listing</li>
+                <li>Monthly networking breakfast access</li>
+                <li>Business training workshops (2 per year)</li>
+                <li>25% discount on chamber events</li>
+                <li>Social media spotlight (once per quarter)</li>
+                <li>Basic advertising opportunities</li>
+            </ul>
+        </dialog>
+        
+        <!-- Silver Membership Modal -->
+        <dialog id="silver-modal" class="membership-modal">
+            <button class="close-modal" aria-label="Close modal">✕</button>
+            <h3>Silver Membership Benefits</h3>
+            <p><strong>Fee:</strong> $500 per year</p>
+            <ul>
+                <li>All Bronze benefits, plus:</li>
+                <li>Premium directory listing with logo</li>
+                <li>Weekly networking event access</li>
+                <li>Priority registration for all events</li>
+                <li>50% discount on chamber events</li>
+                <li>Monthly social media spotlight</li>
+                <li>Featured in monthly newsletter</li>
+                <li>Business consultation session (2 per year)</li>
+            </ul>
+        </dialog>
+        
+        <!-- Gold Membership Modal -->
+        <dialog id="gold-modal" class="membership-modal">
+            <button class="close-modal" aria-label="Close modal">✕</button>
+            <h3>Gold Membership Benefits</h3>
+            <p><strong>Fee:</strong> $1,000 per year</p>
+            <ul>
+                <li>All Silver benefits, plus:</li>
+                <li>Featured homepage spotlight (rotating)</li>
+                <li>VIP access to all chamber events</li>
+                <li>Complimentary event tickets (4 per year)</li>
+                <li>Dedicated business advisor</li>
+                <li>Weekly social media features</li>
+                <li>Speaking opportunities at events</li>
+                <li>Board of Directors voting rights</li>
+                <li>Exclusive annual gala invitation</li>
+            </ul>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h2>Forward Momentum Business Alliance</h2>
+                <p>100 Civic Center Drive, Suite 200, Prosperity Heights, ST 12345</p>
+                <p>📧 info@forwardmomentumalliance.org | 📞 (234) 916-135-1016</p>
+            </div>
+            <div class="development-info">
+                <p>© <span id="current-year">2024</span> Forward Momentum Business Alliance</p>
+                <p><strong>Emerald Uwaoma Awoke</strong> | WDD 231 Project</p>
+                <p>Last Modified: <span id="last-modified">Loading...</span></p>
+                <p>Weather data provided by OpenWeatherMap</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

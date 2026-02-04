@@ -156,3 +156,39 @@
     }
 }
 
+/* ===== JOIN PAGE - DESKTOP STYLES ===== */
+@media screen and (min-width: 768px) {
+    .join-container {
+        flex-direction: row;
+        gap: 3rem;
+    }
+    
+    .application-form {
+        flex: 2;
+        order: 1;
+    }
+    
+    .membership-cards {
+        flex: 1;
+        order: 2;
+    }
+    
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .membership-modal {
+        width: 50%;
+        padding: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .join-main {
+        padding: 0 2rem;
+    }
+    
+    .membership-modal {
+        width: 40%;
+    }
+}
