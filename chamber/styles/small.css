@@ -215,7 +215,10 @@ h1 {
 }
 
 .card-content {
-    padding: 1.25rem;
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-content h3 {
@@ -695,11 +698,14 @@ legend {
     right: 1rem;
     background: transparent;
     border: none;
+    width: 36px;
+    height: 36px;
     font-size: 1.5rem;
     cursor: pointer;
     color: #666;
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
+    z-index: 10;
 }
 
 .close-modal:hover {
@@ -973,13 +979,6 @@ legend {
     display: block;
 }
 
-.card-content {
-    padding: 1.5rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
 .card-content h2 {
     margin: 0 0 0.75rem 0;
     color: #1a4f8b;
@@ -1054,23 +1053,6 @@ legend {
 
 .attraction-modal::backdrop {
     background: rgba(0, 0, 0, 0.7);
-}
-
-.close-modal {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: rgba(255, 255, 255, 0.9);
-    border: none;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
 }
 
 .modal-content {
