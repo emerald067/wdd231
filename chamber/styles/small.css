@@ -893,7 +893,7 @@ legend {
 }
 
 #close-message {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.111);
     border: none;
     color: white;
     width: 32px;
