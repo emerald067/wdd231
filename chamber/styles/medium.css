@@ -1,0 +1,86 @@
+/* Medium screens (641px to 1024px) */
+@media screen and (min-width: 641px) {
+    .discover-main {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "demographics demographics"
+            "gallery gallery"
+            "cta cta";
+        gap: 2rem;
+        padding: 0 2rem;
+    }
+    
+    .discover-main h1 { grid-area: header; }
+    .demographics { grid-area: demographics; }
+    .gallery-section { grid-area: gallery; }
+    .discover-cta { grid-area: cta; }
+    
+    /* Grid layout for attractions - 2 columns */
+    .discover-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .demographics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Image hover effects for desktop/tablet */
+    .discover-card img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    
+    .discover-card img:hover {
+        transform: scale(1.03);
+        filter: brightness(1.1) saturate(1.2);
+    }
+}
+
+/* Large screens (1025px and above) */
+@media screen and (min-width: 1025px) {
+    .discover-main {
+        grid-template-areas:
+            "header header header"
+            "demographics gallery gallery"
+            "demographics gallery gallery"
+            "cta cta cta";
+        grid-template-columns: 1fr 2fr;
+        gap: 2.5rem;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    
+    /* Grid layout for attractions - 3 columns with named areas */
+    .discover-gallery {
+        display: grid;
+        grid-template-areas:
+            "card1 card2 card3"
+            "card4 card5 card6"
+            "card7 card8 .";
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+    /* Assign each card to a specific area */
+    .discover-card:nth-child(1) { grid-area: card1; }
+    .discover-card:nth-child(2) { grid-area: card2; }
+    .discover-card:nth-child(3) { grid-area: card3; }
+    .discover-card:nth-child(4) { grid-area: card4; }
+    .discover-card:nth-child(5) { grid-area: card5; }
+    .discover-card:nth-child(6) { grid-area: card6; }
+    .discover-card:nth-child(7) { grid-area: card7; }
+    .discover-card:nth-child(8) { grid-area: card8; }
+    
+    .demographics-grid {
+        grid-template-columns: 1fr;
+        align-content: start;
+    }
+    
+    /* Enhanced hover effects */
+    .discover-card img:hover {
+        transform: scale(1.05);
+        filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2)) brightness(1.15);
+    }
+}

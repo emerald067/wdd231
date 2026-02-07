@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Prosperity Heights. Explore attractions, landmarks, and local businesses in our vibrant community.">
+    <meta name="author" content="Emerald Uwaoma Awoke">
+    
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Forward Momentum Business Alliance | Discover">
+    <meta property="og:description" content="Explore attractions, landmarks, and local businesses in Prosperity Heights.">
+    <meta property="og:image" content="https://emerald067.github.io/wdd231/chamber/images/og-preview.webp">
+    <meta property="og:url" content="https://emerald067.github.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <title>Discover Prosperity Heights | Forward Momentum Business Alliance</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/discover.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.webp" alt="Forward Momentum Business Alliance Logo" width="50" height="50">
+                <span class="site-title">Forward Momentum Business Alliance</span>
+            </a>
+            <button id="menu-button" aria-label="Toggle Navigation Menu">☰</button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html" class="active">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="discover-main">
+        <h1>Discover Prosperity Heights</h1>
+        
+        <!-- Visitor Message -->
+        <div class="visit-message card" id="visit-message">
+            <div class="message-content">
+                <span class="message-icon">💬</span>
+                <p id="visit-text">Welcome to Prosperity Heights!</p>
+            </div>
+            <button id="close-message" aria-label="Close message">✕</button>
+        </div>
+        
+        <!-- Demographics Section -->
+        <section class="demographics card">
+            <h2>About Prosperity Heights</h2>
+            <div class="demographics-grid">
+                <div class="demographic-item">
+                    <h3>📊 Population</h3>
+                    <p><strong>85,000+</strong> residents</p>
+                    <p>Growing at 3.2% annually</p>
+                </div>
+                <div class="demographic-item">
+                    <h3>🏢 Businesses</h3>
+                    <p><strong>1,200+</strong> registered</p>
+                    <p>65% small & medium enterprises</p>
+                </div>
+                <div class="demographic-item">
+                    <h3>🎓 Education</h3>
+                    <p><strong>92%</strong> high school graduates</p>
+                    <p>3 universities within 30km</p>
+                </div>
+                <div class="demographic-item">
+                    <h3>🌳 Quality of Life</h3>
+                    <p><strong>15</strong> public parks</p>
+                    <p>Average commute: 22 minutes</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <h2>Local Attractions & Landmarks</h2>
+            <p class="gallery-intro">Explore the best that Prosperity Heights has to offer. Click on any attraction to learn more.</p>
+            
+            <div class="discover-gallery" id="discover-container">
+                <!-- Cards will be loaded dynamically by JavaScript -->
+                <div class="loading-card">
+                    <p>Loading attractions...</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action -->
+        <section class="discover-cta card">
+            <div class="cta-content">
+                <h2>Experience Prosperity Heights</h2>
+                <p>Ready to explore in person? Join our community and discover exclusive events, business opportunities, and networking.</p>
+                <a href="join.html" class="cta-button">Join Our Chamber</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h2>Forward Momentum Business Alliance</h2>
+                <p>100 Civic Center Drive, Suite 200, Prosperity Heights, ST 12345</p>
+                <p>📧 info@forwardmomentumalliance.org | 📞 (234) 916-135-1016</p>
+            </div>
+            <div class="development-info">
+                <p>© <span id="current-year">2024</span> Forward Momentum Business Alliance</p>
+                <p><strong>Emerald Uwaoma Awoke</strong> | WDD 231 Project</p>
+                <p>Last Modified: <span id="last-modified">Loading...</span></p>
+                <p>Weather data provided by OpenWeatherMap</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

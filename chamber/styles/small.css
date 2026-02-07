@@ -135,7 +135,7 @@ header {
 
 h1 {
     margin: auto;
-    padding: 30px;
+    padding: 60px;
 }
 
 /* ===== MEMBER DISPLAY - DEFAULT LIST VIEW ===== */
@@ -848,4 +848,280 @@ legend {
 .no-data a {
     color: #1a4f8b;
     text-decoration: underline;
+}
+
+/* ===== DISCOVER PAGE STYLES ===== */
+.discover-main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Visit Message */
+.visit-message {
+    background: linear-gradient(135deg, #1a4f8b 0%, #2a6ab8 100%);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.message-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+}
+
+.message-icon {
+    font-size: 1.5rem;
+}
+
+#close-message {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+#close-message:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Demographics */
+.demographics-grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.demographic-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #1a4f8b;
+}
+
+.demographic-item h3 {
+    margin: 0 0 0.5rem 0;
+    color: #1a4f8b;
+}
+
+.demographic-item p {
+    margin: 0.25rem 0;
+    color: #555;
+}
+
+.demographic-item strong {
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+/* Gallery */
+.gallery-intro {
+    color: #666;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.discover-gallery {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.discover-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.discover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card-image {
+    margin: 0;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content h2 {
+    margin: 0 0 0.75rem 0;
+    color: #1a4f8b;
+    font-size: 1.25rem;
+}
+
+.card-content address {
+    font-style: normal;
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.card-content .description {
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    flex: 1;
+}
+
+.learn-more {
+    align-self: flex-start;
+    background: #1a4f8b;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s;
+    font-family: inherit;
+}
+
+.learn-more:hover {
+    background: #2a6ab8;
+}
+
+/* Discover CTA */
+.discover-cta {
+    background: linear-gradient(135deg, #1a4f8b 0%, #2a6ab8 100%);
+    color: white;
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: 12px;
+}
+
+.cta-content h2 {
+    color: white;
+    margin-top: 0;
+}
+
+.discover-cta .cta-button {
+    background: white;
+    color: #1a4f8b;
+    border: 2px solid white;
+}
+
+.discover-cta .cta-button:hover {
+    background: #f0f8ff;
+}
+
+/* Modal Styles for Discover Page */
+.attraction-modal {
+    border: none;
+    border-radius: 12px;
+    padding: 0;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.attraction-modal::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.modal-content {
+    padding: 2rem;
+}
+
+.modal-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.modal-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #444;
+    margin: 1rem 0;
+}
+
+.modal-details {
+    display: grid;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+}
+
+.modal-details p {
+    margin: 0;
+    color: #555;
+}
+
+/* Loading state */
+.loading-card {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    color: #666;
+}
+
+/* Mobile only - no hover effects */
+@media screen and (max-width: 640px) {
+    .discover-gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Disable hover effects on mobile */
+    .discover-card img:hover {
+        transform: none;
+        filter: none;
+    }
 }
