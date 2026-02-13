@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pawprint Valley Animal Rescue: Finding forever homes for cats and dogs in our community. Adopt, volunteer, donate.">
+    <meta name="author" content="Emerald Uwaoma Awoke">
+
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Pawprint Valley Animal Rescue">
+    <meta property="og:description" content="Help us rescue and rehome animals in need. Browse adoptable pets and get involved today.">
+    <meta property="og:image" content="https://emerald067.github.io/wdd231/final/images/hero-cat-dog.webp">
+    <meta property="og:url" content="https://emerald067.github.io/wdd231/final/">
+    <meta property="og:type" content="website">
+
+    <!-- Goole Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>Pawprint Valley Animal Rescue – Home</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!--CSS Files-->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <!-- JavaScript -->
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="Pawprint Valley logo" width="40" height="40">
+            <span>Pawprint Valley</span>
+        </div>
+        <button id="hamburger" aria-label="Menu">&#9776;</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="adopt.html">Adopt</a></li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-cat-dog.webp" media="(min-width: 768px)">
+                <img src="images/hero-cat-dog.webp" alt="Cat and dog sitting together" loading="eager" width="1200"
+                    height="400">
+            </picture>
+            <h1>Every Pet Deserves a Forever Home</h1>
+            <p>Pawprint Valley Animal Rescue has been serving our community since 2010.</p>
+            <div class="hero-buttons">
+                <a href="adopt.html" class="btn btn-primary">Meet Our Pets</a>
+                <a href="get-involved.html" class="btn btn-secondary">Volunteer</a>
+            </div>
+        </section>
+
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>To rescue, rehabilitate, and rehome abandoned and neglected animals while promoting responsible pet
+                ownership through education and community engagement.</p>
+        </section>
+
+        <section class="weather-section">
+            <h2>Today at the Rescue</h2>
+            <div id="weather-container">
+                <!-- Dynamically populated by weather.js -->
+            </div>
+        </section>
+
+        <section class="featured-pet">
+            <h2>Pet of the Week</h2>
+            <div id="featured-pet-container">
+                <!-- Dynamically loaded via JavaScript -->
+            </div>
+        </section>
+
+        <section class="cta-cards">
+            <div class="card">
+                <h3>Adopt</h3>
+                <p>Find your new best friend.</p>
+                <a href="adopt.html" class="btn btn-primary">View Pets</a>
+            </div>
+            <div class="card">
+                <h3>Volunteer</h3>
+                <p>Lend a helping hand.</p>
+                <a href="get-involved.html" class="btn btn-primary">Sign Up</a>
+            </div>
+            <div class="card">
+                <h3>Donate</h3>
+                <p>Support our cause.</p>
+                <a href="get-involved.html#donate" class="btn btn-primary">Give Now</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentyear"></span> Pawprint Valley Animal Rescue</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            <p>Contact: info@pawprintvalley.org | (234) 916-135-1016</p>
+            <p><a href="attributions.html">Attributions</a> | <a href="https://www.awesomescreenshot.com/video/49406725?key=eaa553e82922905fe366c48c85435050" id="video-link">📹 Project Video</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

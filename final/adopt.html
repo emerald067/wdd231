@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our adoptable cats and dogs. Each profile includes photo, breed, age, and personality. Start your adoption journey today.">
+    <meta name="author" content="Emerald Uwaoma Awoke">
+    
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Adoptable Pets – Pawprint Valley">
+    <meta property="og:description" content="Browse our adoptable cats and dogs. Each profile includes photo, breed, age, and personality. Start your adoption journey today.">
+    <meta property="og:image" content="https://emerald067.github.io/wdd231/final/images/hero-cat-dog.webp">
+    <meta property="og:url" content="https://emerald067.github.io/wdd231/final/adopt.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    
+    <title>Pawprint Valley – Adoptable Pets</title>
+
+    <!-- Favicon -->
+    <link rel="icon"  href="favicon.ico">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <!-- JavaScript -->
+    <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="Pawprint Valley logo" width="40" height="40">
+            <span>Pawprint Valley</span>
+        </div>
+        <button id="hamburger" aria-label="Menu">&#9776;</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adopt.html" class="active">Adopt</a></li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Meet Our Friends</h1>
+        <p class="page-intro">These wonderful animals are waiting for a loving home. Click on any card to learn more.</p>
+        
+        <!-- Recently viewed section – updated via local storage -->
+        <section class="recently-viewed" id="recently-viewed-section" style="display: none;">
+            <h2>Recently Viewed</h2>
+            <div id="recently-viewed-list" class="recent-grid"></div>
+        </section>
+
+        <section class="pets-grid" id="pets-grid">
+            <!-- Dynamically populated from pets.json -->
+            <div class="loading">Loading adorable pets...</div>
+        </section>
+    </main>
+
+    <!-- Modal dialog for pet details -->
+    <div id="pet-modal" class="modal" aria-hidden="true">
+        <div class="modal-overlay" tabindex="-1"></div>
+        <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-content">
+                <!-- Dynamic content inserted here -->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentyear"></span> Pawprint Valley Animal Rescue</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            <p>Contact: info@pawprintvalley.org | (234) 916-135-1016</p>
+            <p><a href="attributions.html">Attributions</a> | <a href="https://www.awesomescreenshot.com/video/49406725?key=eaa553e82922905fe366c48c85435050" id="video-link">📹 Project Video</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

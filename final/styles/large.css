@@ -1,0 +1,74 @@
+/* ===== large.css – Desktop (1024px+) ===== */
+
+@media screen and (min-width: 1024px) {
+    main {
+        max-width: 1200px;
+        padding: 0 2rem;
+    }
+    
+    /* Desktop Navigation – Flex Horizontal */
+    #hamburger {
+        display: none;
+    }
+    
+    nav {
+        display: block !important;
+        width: auto;
+        margin-top: 0;
+    }
+    
+    nav ul {
+        flex-direction: row;
+        gap: 2rem;
+    }
+    
+    nav a {
+        background: none;
+        padding: 0.5rem 0;
+        border-bottom: 3px solid transparent;
+        border-radius: 0;
+    }
+    
+    nav a:hover {
+        background: none;
+        border-bottom-color: var(--accent);
+    }
+    
+    nav a.active {
+        background: none;
+        border-bottom-color: var(--accent);
+        color: var(--white);
+    }
+    
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .hero img {
+        margin-bottom: 0;
+    }
+    
+    .hero-buttons {
+        justify-content: flex-start;
+    }
+    
+    .cta-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .pets-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .mission {
+        padding: 2.5rem;
+    }
+    
+    .two-column {
+        gap: 2.5rem;
+    }
+}
