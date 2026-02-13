@@ -1,7 +1,4 @@
-/* ===== Pawprint Valley Animal Rescue ===== */
-/* small.css – Mobile First (0–575px) */
-/* Color Scheme – WCAG AA Compliant, Zero Contrast Errors */
-
+/* Small.css - Base styles for mobile-first design */
 :root {
     --primary: #2C5F2D;      /* Forest Green – AAA compliant on white */
     --secondary: #FDF8F5;    /* Soft Cream – background */
