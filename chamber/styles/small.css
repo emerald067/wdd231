@@ -946,12 +946,6 @@ legend {
     text-align: center;
 }
 
-.discover-gallery {
-    display: grid;
-    gap: 1.5rem;
-    margin-bottom: 3rem;
-}
-
 .discover-card {
     background: white;
     border-radius: 12px;
